@@ -1,0 +1,95 @@
+body{
+    background-color: #fff;
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.navbar-default{
+    font-weight: bold;
+}
+
+.navbar-header a{
+    font-size: 2em;
+    color: red !important;
+    font-weight: 600;
+}
+
+#myCollapsingList{
+    padding-right: 15px;
+
+}
+
+section {
+    padding: 30px 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+section h2 {
+    text-transform: uppercase;
+    color: #696969;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+#myvan .text-muted, footer .text-muted {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.btn-danger {
+   background-color: red !important;
+}
+
+.carousel-caption{
+    text-shadow: 1px 1px black;
+    font-weight: 400;
+}
+
+footer a p{
+    font-size: 36px;
+    color:red;
+    text-decoration: none;
+    display: inline-block;
+}
+
+i, #dvpl {
+    color:red;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
