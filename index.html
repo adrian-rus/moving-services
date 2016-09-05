@@ -21,6 +21,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src='js/bootstrap.min.js'></script>
     <script src="js/main.js"></script>
+   <script>
+        function sendMail() {
+            var link = "mailto:ciprian.stoica@live.com"
+             + "&subject=" + encodeURI("Quote request - Get Moving!")
+             + "&body=" + encodeURI(document.getElementById('myText').value);
+            window.location.href = link;
+        }
+    </script>
 
 
 </head>
@@ -115,13 +123,18 @@
 	    <div class="row">
 		    <div class="col-md-6">
 			    <p>My name is Ciprian Stoica and I am a professional mover!</p>
-					<p>I have more than 2 years of experience moving houses, offices and furniture all around Ireland.</p>
+					<p>I have more than 2 years of experience moving houses, offices and furniture all around Ireland.
+					( Northern Ireland included.)</p>
 					<p>I have been working with AnyVan.ie to gain experience and a great rating.</p>
-					 <p>With a reputation as a professional, friendly removal service, you can rely on me for all your moving needs,
-					all for a price that would be hard to beat by other movers in Ireland.</p>
-				<p>
+					<br>
+					<p><img src="images/anyvan.png" alt="anyvan logo"></p>
+					<p class="text-info"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+					<blockquote>Ciprian has been working with us since 2014 and received great feedback from our customers.
+					We would recommend his services and professionalism.With a reputation as a professional, friendly
+						removal service, you can rely on him for all your moving needs.
+					</blockquote>
+					<a href="#contact" class="btn btn-danger">Contact me today for a quote!</a>
 
-				</p>
 		    </div>
 		    <div class="col-md-6">
 				<img class="img-responsive img-circle" src="images/user.png" alt="me" />
@@ -133,25 +146,68 @@
 	<section class="container slideanim" id="myservices">
 		<h2>My Services</h2>
 		<hr>
-		<div class="container">
-	    <div class="row">
-		    <div class="col-md-6">
-			    <p>Hiring the right moving van can mean the difference between a smooth or stressful moving experience.</p>
-					<p>I have more than 2 years of experience moving houses, offices and furniture all around Ireland.</p>
-					 <p>With a reputation as a professional, friendly removal service, you can rely on me for all your moving needs,
-					all for a price that would be hard to beat by other movers in Ireland.</p>
-				<p>
+        <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#house">House Removals <i class="fa fa-building-o" ></i> </a></li>
+                    <li><a data-toggle="tab" href="#menu1">Furniture Delivery <i class="fa fa-cubes"></i> </a></li>
+                    <li><a data-toggle="tab" href="#menu2">Dumping Service <i class="fa fa-trash-o"></i> </a></li>
+                </ul>
 
-				</p>
-		    </div>
-		    <div class="col-md-6">
-				<h3>Need a Piano Moved?</h3>
-				<p>I have been moving pianos in Dublin and surrounding areas, for the past several years.  Myself and a team of
-			movers is ready to take on any piano move.
-			<p>Contact me to enquire more about this service.</p>
-		    </div>
-        </div>
-		</div>
+                <div class="tab-content text-justify col-md-8">
+                    <div id="house" class="tab-pane fade in active">
+                        <h3> House or Apartments Removals </h3>
+                        <p><strong>We are helping you move anything all around the island of Ireland.</strong> </p>
+                        <p>Hiring the right moving van can mean the difference between a smooth or stressful moving experience.</p>
+                        <p>I have more than 2 years of experience moving houses, offices and furniture in Ireland and Northern Ireland.</p>
+                        <p>With a reputation as a professional, friendly removal service, you can rely on me for all your moving needs,
+					all for a price that would be hard to beat by other movers in Ireland.</p>
+
+                        <h3>Reliable Furniture Removal</h3>
+                        <p>When you hire me, you can be assured that me and my professional team will move and unload
+                            your furniture with care and efficiency.</p>
+                        <p>My van is well maintained, equipped with removal trolleys, removal blankets, tools, straps etc. to ensure the safe
+                            transportation of your property. </p>
+                        <p>As well as moving and loading your stuff, I can supply crates and boxes for moving.</p>
+                        <p><strong> Depending on the size of move, I can supply two or more movers for the job.</strong></p>
+
+                        <h3>Packing service</h3>
+                        <p>Me and my movers can help also with packing or moving furniture, if needed — just ask about this when hiring my service.</p>
+                        <p><a class="btn-danger btn" href="#contact"> Contact me now! </a> </p>
+                    </div>
+
+                    <div id="menu1" class="tab-pane fade">
+                        <h3>Need Furniture Collected or Delivered?</h3>
+                        <p>I have more than 2 years of experience doing furniture delivery and collections for customers in
+                            Dublin area.  I can collect whatever household appliance or furniture you've
+                            ordered from IKEA, Argos, Harvey Norman and any of the furniture and home stores in the area.</p>
+                        <p>I can cover all of your furniture delivery requirements — placing the order and
+                                transporting it to your home all in the same day. </p>
+                        <p> Let us know your requirements and we do our best to accommodate.</p>
+
+                        <h3> Furniture Assembly?</h3>
+                        <p> You can be assured that all types of furniture can be moved or delivered without any problem.
+                            My experienced movers will handle all furniture or flatpacks with utmost care.</p>
+                        <p> As well as delivering flatpack furniture, we can assemble it for you also —
+                            just mention this to us when hiring our service.</p>
+
+                        <h3> Moving Furniture to Storage?</h3>
+                        <p> I can arrange for and move your furniture to storage in the Dublin area. <br>
+                            <a href="#contact" class="btn btn-danger">Contact me</a> to inquire.</p>
+                    </div>
+
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>Need Items Disposed, Dismantled, Recycled, Transported?</h3>
+                        <p> I can help with any type of moving, dismantling, disposing or dumping of items from your
+                            home or business.</p>
+
+                        <h3> Reliable dumping service!</h3>
+                        <p>I can transport items for recycling or disposal for an affordable price.</p>
+
+                        <p><a class="btn-danger btn" href="#contact">Get in touch!</a> </p>
+
+                    </div>
+                </div>
+            </div>
 	</section>
 
 
@@ -187,7 +243,7 @@
 					</tr>
 					<tr>
 						<td>Volume*: </td>
-						<td>12 m<sup>3</sup></td>
+						<td>16 m<sup>3</sup></td>
 					</tr>
 				</table>
 				<hr>
@@ -204,29 +260,42 @@
 <section class="container slideanim" id="contact">
   <h2>Contact</h2>
 	<hr>
-  <div class="row">
-	  <div class="col-sm-7">
+  <div class="container">
       <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
+          <div class="col-md-8">
+              <h3> What do I need to know?</h3>
+              <ul>
+                  <li><p>How many bags and boxes? Any furniture?</p></li>
+                  <li><p>Is there any stairs? Is there a lift? </p></li>
+                  <li><p>Is there parking nearby? Please note that underground parking has a height restriction and the van won't fit in. </p></li>
+                  <li><p>Where are you moving from and to?</p></li>
+                  <li><p>Add your phone number.</p></li>
+
+              </ul>
+               <p>Contact me today and I will get back to you within 24 hours.</p><br>
+          </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Quote request/ Comment" rows="5"></textarea><br>
       <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-danger pull-right" type="submit">Send</button>
-        </div>
+	  <div class="col-sm-8">
+         <div class="row">
+             <div class="form-group">
+                 <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
+                 <textarea class="form-control" id="myText" name="comments" maxlength="1500" placeholder="Let us know how can we help."
+                           rows="8"></textarea>
+             </div>
+             <div class="form-group">
+                  <a href="mailto:ciprian.stoica@live.com" class="btn btn-danger pull-right" type="submit"
+                     onclick="sendMail(); return false">Send <i class="fa fa-paper-plane-o" id="plane"></i> </a>
+              </div>
+         </div>
       </div>
-    </div>
-	  <div class="col-sm-5">
-      <p>Contact me and I will get back to you within 24 hours.</p>
-      <p><i class="fa fa-map-marker"></i> Dublin, Ireland </p>
-      <p><i class="fa fa-mobile"></i> + 353 86 225 6149 </p>
-      <p><i class="fa fa-envelope-o"></i> ciprian.stoica@live.com</p>
-    </div>
+	  <div class="col-sm-4">
+          <h3> My contact details: </h3>
+          <p><i class="fa fa-map-marker"></i> Dublin, Ireland </p>
+          <p><i class="fa fa-mobile"></i> + 353 86 225 6149 </p>
+          <p><i class="fa fa-envelope-o"></i> ciprian.stoica@live.com</p>
+      </div>
+      </div>
   </div>
 </section>
 
@@ -237,7 +306,8 @@
   frameborder="0"
   style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAYHpfKuR8yULZbGDqzOVGRvlEmzjaqgAE&q=Dublin,Ireland"
-  allowfullscreen>
+  allowfullscreen
+      >
 </iframe>
 
     </section>
@@ -247,7 +317,8 @@
 <footer class="container-fluid text-center">
     <div class="row">
         <a href="https://www.facebook.com/ciprian.stoica.543?fref=ts"><p><i class="fa fa-facebook-official"></i></p></a>
-        <a href="http://www.twitter.com"><p><i class="fa fa-twitter"></i></p></a>
+        <a href="#"><p><i class="fa fa-twitter"></i></p></a>
+        <a href="#"><p><i class="fa fa-linkedin"></i> </p></a>
     </div>
     <br>
     <div class="row">

@@ -5,6 +5,7 @@ body{
 
 .navbar-default{
     font-weight: bold;
+    box-shadow: 2px 2px 2px lightgrey;
 }
 
 .navbar-header a{
@@ -60,7 +61,10 @@ i, #dvpl {
     color:red;
 }
 
-.slideanim {visibility:hidden;}
+.slideanim {
+    visibility:hidden;
+}
+
 .slide {
     /* The name of the animation */
     animation-name: slide;
@@ -92,4 +96,16 @@ i, #dvpl {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+
+.img-responsive{
+    padding-top: 30px;
+}
+
+.nav-tabs a{
+    color: red;
+}
+
+#plane{
+    color: white;;
 }
