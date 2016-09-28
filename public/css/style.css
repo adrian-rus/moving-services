@@ -1,7 +1,9 @@
 body{
     background-color: #fff;
     font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    line-height: 25px;
 }
+
 
 .navbar-default{
     font-weight: bold;
